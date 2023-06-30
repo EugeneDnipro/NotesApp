@@ -9,10 +9,10 @@ import java.io.IOException;
 
 @SpringBootApplication
 @EnableJpaRepositories("com/goit/Repository")
-public class JavaDevModule15Application {
+public class NotesApplication {
 
     public static void main(String[] args) throws IOException {
         new FlywayConfigurations().setup().migrate();
-        SpringApplication.run(JavaDevModule15Application.class, args);
+        SpringApplication.run(NotesApplication.class, args);
     }
 }
